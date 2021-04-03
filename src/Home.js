@@ -11,8 +11,8 @@ function Home() {
 	useEffect(
 		() => {
 			const load = async (e) => {
-		
-				axios.get('http://localhost:8080/images',{},{
+				//https://gocho-api.herokuapp.com/v2/api-docs
+				axios.get('https://gocho-api.herokuapp.com/images',{},{
 					headers: {
 						'Content-type':'application/json'
 					}

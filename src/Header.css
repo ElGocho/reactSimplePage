@@ -32,4 +32,10 @@
 	border: 2px solid black;
 }
 
-
+.header__time{
+	position: absolute;
+	width:15%;
+	top:5%;
+	right:1%;
+	text-align: right;
+}

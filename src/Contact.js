@@ -17,7 +17,7 @@ function Contact() {
 		() => {
 			const load = async (e) => {
 		
-				axios.put('http://localhost:8080/user',{},{
+				axios.put('https://gocho-api.herokuapp.com/user',{},{
 					headers: {
 						'Content-type':'application/json'
 					}
@@ -38,7 +38,7 @@ function Contact() {
 	const sendMessage = async (e) => {
 		e.preventDefault()
 
-		axios.post('http://localhost:8080/message', {
+		axios.post('https://gocho-api.herokuapp.com/message', {
 			name: name,
 			message:  message
 		}).then( (resp) => {
